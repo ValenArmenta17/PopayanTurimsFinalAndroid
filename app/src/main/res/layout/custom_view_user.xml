@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="350sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="10sp"
+        android:layout_margin="20sp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="400dp"
+            android:layout_height="445dp"
+
+            >
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/profileCardView"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:layout_marginTop="25sp"
+                app:cardCornerRadius="100sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/Avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/sinimagen"
+                    android:scaleType="centerCrop"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="261dp"
+                android:layout_height="68dp"
+                android:layout_marginTop="80dp"
+                android:text="ccorreo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="20sp"
+                app:layout_constraintHorizontal_bias="0.604"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profileCardView" />
+
+            <View
+                android:id="@+id/bottomLine"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="268dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="12dp"
+                android:text="nombre"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="28sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileCardView" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:clickable="true"
+                android:onClick="NuevoUser"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/profileCardView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.041"
+                app:srcCompat="@drawable/ic_baseline_person_add_24" />
+
+            <Button
+                android:id="@+id/borar"
+                android:layout_width="60dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="224dp"
+                android:layout_marginEnd="272dp"
+                android:onClick="deleteUser"
+                android:orientation="vertical"
+                android:text="X"
+                app:layout_constraintEnd_toEndOf="@+id/txtEmail"
+                app:layout_constraintTop_toBottomOf="@+id/floatingActionButton4"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

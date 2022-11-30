@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PopayanTurims</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="titulo">Titulo</string>
+    <string name="fecha">Titulo</string>
+    <string name="Horarios">Horarios</string>
+    <string name="direcion">Direccion</string>
+    <string name="nombre">Nombre</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="Contenido">Contenido</string>
+    <string name="vermas">Ver Mas</string>
+    <string name="content_description_media">.</string>
+    <string name="Ubicacion">Ubicacion</string>
+    <string name="Inicio">Inicio</string>
+    <string name="Fin">Fin</string>
+
+</resources>

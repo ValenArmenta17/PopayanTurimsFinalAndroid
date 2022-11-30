@@ -1,0 +1,90 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_height="436dp">
+
+
+        <ImageView
+            android:id="@+id/imageNt"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/sinimagen" />
+
+        <TextView
+            android:id="@+id/txtNombreEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/imageNt"
+            android:layout_toRightOf="@+id/imageNt"
+            android:text="@string/nombre"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtUbicacionEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNombreEvento"
+            android:layout_marginStart="-90dp"
+            android:layout_marginLeft="-90dp"
+            android:layout_marginTop="228dp"
+            android:layout_toEndOf="@+id/imageNt"
+            android:layout_toRightOf="@+id/imageNt"
+            android:text="@string/Ubicacion"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtHorariosevento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNombreEvento"
+            android:layout_marginStart="-91dp"
+            android:layout_marginLeft="-91dp"
+            android:layout_marginTop="336dp"
+            android:layout_toEndOf="@+id/imageNt"
+            android:layout_toRightOf="@+id/imageNt"
+            android:text="@string/Horarios"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtinitio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNombreEvento"
+            android:layout_marginStart="-78dp"
+            android:layout_marginLeft="-78dp"
+            android:layout_marginTop="68dp"
+            android:layout_toEndOf="@+id/imageNt"
+            android:layout_toRightOf="@+id/imageNt"
+            android:text="@string/Inicio"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtfechafinevento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNombreEvento"
+            android:layout_marginStart="-84dp"
+            android:layout_marginLeft="-84dp"
+            android:layout_marginTop="135dp"
+            android:layout_toEndOf="@+id/imageNt"
+            android:layout_toRightOf="@+id/imageNt"
+            android:text="@string/Fin"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
